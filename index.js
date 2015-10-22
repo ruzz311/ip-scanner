@@ -7,9 +7,9 @@ var cliInterface = require('./interface'),
     _ = require('lodash'),
     util = require('util');
 
-module.exports = scanPorts;
+module.exports = ipScan;
 
-function scanPorts(opts /*object*/, callback /*function*/) {
+function ipScan(opts /*object*/, callback /*function*/) {
     _.defaultsDeep(opts, {
         range1: [0, 10],
         range2: [0, 10],

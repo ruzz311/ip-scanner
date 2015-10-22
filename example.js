@@ -1,9 +1,9 @@
 'use strict';
 
-var scanPorts = require('./');
+var ipScan = require('./');
 
 // http://192.168.{range1...}.{range2...}
-scanPorts({
+ipScan({
     poolSize: 100,
     //Range1: [10, 300],
     //Range2: [10, 300]

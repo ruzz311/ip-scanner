@@ -1,7 +1,7 @@
 {
   "name": "ip-scanner",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Scan a range of ips/ports for open http servers",
   "main": "index.js",
   "dependencies": {
     "blessed": "^0.1.81",
@@ -15,8 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:ruzz311/ip-scanner.git"
+    "url": "git@github.com:ruzz311/ip-scanner.git"
   },
-  "author": "",
+  "author": "Russell Madsen <ruzz311@gmail.com>",
   "license": "ISC"
 }
