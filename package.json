@@ -1,0 +1,22 @@
+{
+  "name": "ip-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "lodash": "^3.10.1",
+    "opener": "^1.4.1",
+    "request": "^2.65.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:ruzz311/ip-scanner.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
