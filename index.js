@@ -15,10 +15,11 @@ function ipScan(opts /*object*/, callback /*function*/) {
         range2: [0, 10],
         poolSize: 5,
         ports: [80],
-        timeout: 2000
+        timeout: 2000,
+        urlTemplate: "http://192.168.%s.%s"
     });
 
-    var URL_TEMPLATE = 'http://192.168.%s.%s',
+    var URL_TEMPLATE = opts.urlTemplate,
         killed = false,
         i = opts.range1[0] + 0,
         iUpper = opts.range1[1],

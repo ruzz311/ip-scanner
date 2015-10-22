@@ -1,10 +1,11 @@
 {
   "name": "ip-scanner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Scan a range of ips/ports for open http servers",
   "main": "index.js",
   "dependencies": {
     "blessed": "^0.1.81",
+    "bluebird": "^2.10.2",
     "lodash": "^3.10.1",
     "opener": "^1.4.1",
     "request": "^2.65.0"

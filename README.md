@@ -3,7 +3,7 @@ small-ish script for scanning local ips for open http servers
 
 ## Example
 Calling ipScan can make <poolSize> calls at once, when they have all completed it will call the next range of IPs.
-The ipScan function only generates the last 2 positions of the an IP address; basically ```http://xxx.xxx.{range1}.{range2}:{ports}```.
+The ipScan function only generates the last 2 positions of the an IP address with the default options; basically ```http://xxx.xxx.{range1}.{range2}:{ports}``` but you can supply your own template string.
 
 Below are the default values that would be provided if you call ```ipScan``` without any arguments
 ```javascript
@@ -13,6 +13,7 @@ ipScan({
     range2: [0, 10], // the last chunk of an ip address
     poolSize: 5, // how many requests to make at a time
     ports: [80], // ports to look at for each generated ip
-    timeout: 2000 // request timeout duration
+    timeout: 2000, // request timeout duration
+    urlTemplate: "http://192.168.%s.%s" //customize how the 2 ranges will be used in the url.
 });
 ```
