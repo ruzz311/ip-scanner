@@ -45,7 +45,7 @@ function ipScan(opts /*object*/, callback /*function*/) {
         if (percent >= 100) {
             clearTimeout(timer);
         }
-        var msg = util.format("Completed %d of %d calls", completed, totalRequests);
+        var msg = util.format("Completed %d of %d calls to %s", completed, totalRequests, URL_TEMPLATE);
         ui.box.setContent(msg);
         //ui.progressbar.content = Math.ceil(percent);
         ui.progressbar.setProgress(percent);

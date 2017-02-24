@@ -4,12 +4,11 @@ var ipScan = require('./');
 
 // http://192.168.{range1...}.{range2...}
 ipScan({
-    poolSize: 100,
-    //Range1: [10, 300],
-    //Range2: [10, 300]
-    range1: [0, 300],
+    poolSize: 50,
+    range1: [0, 200],
     range2: [0, 300],
-    ports: [80, 8080, 1337, 4040, 3000, 9000]
+    ports: [80],
+    urlTemplate: 'http://10.1.%s.%s'
 }, function (result) {
     //console.log('done?');
 });
